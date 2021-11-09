@@ -11,16 +11,16 @@ package boletin6_2;
  */
 public class Satelite{
  
-    private final double meridiano ;
-    private final double paralelo;
-    private final double distanciaTerra ;
+    private static double meridiano ;
+    private static double paralelo;
+    private static double distanciaTerra ;
 
- public Satelite ( ) {
+ public double getSatelite ( ) {
 
-  meridiano = paralelo = distanciaTerra = 0 ;
+  return meridiano = paralelo = distanciaTerra = 0 ;
 }
 
-public Satelite ( double m, double p , double d ){
+public void setSatelite ( double m, double p , double d ){
 
 meridiano = m ;
 paralelo = p;

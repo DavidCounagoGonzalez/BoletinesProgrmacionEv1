@@ -1,6 +1,7 @@
 
 package boletin6_1;
 
+import java.util.Scanner;
 
 public class Boletin6_1 {
 
@@ -9,13 +10,15 @@ public class Boletin6_1 {
         int velocidade;
         int acelerado;
         int frenado;
-        
-        acelerado=(int)(Math.random()*120+1);
-        frenado=(int)(Math.random()+120+1);
+        Scanner datos=new Scanner(System.in);
+        System.out.println("Introduce la aceleración: ");
+        acelerado=datos.nextInt();
+        System.out.println("Introduce la deceleración: ");
+        frenado=datos.nextInt();
    
         Coche cambioV=new Coche();
-        cambioV.acelerar(95);
-        cambioV.frenado(23);
+        cambioV.acelerar(acelerado);
+        cambioV.frenado(frenado);
     }
     
 }
