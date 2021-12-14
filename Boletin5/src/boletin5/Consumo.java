@@ -1,7 +1,6 @@
 
 package boletin5;
 
-import java.util.Scanner;
 
 public class Consumo {
     
@@ -10,7 +9,6 @@ public class Consumo {
     private float vMed;
     private float pGas;
     
-    Scanner datos=new Scanner(System.in);
     
 //Constructores
     public Consumo(){
@@ -25,7 +23,7 @@ public class Consumo {
     
 
     public float getTiempo (){
-        return vMed/km;
+        return km/vMed;
     }
     public float consumoMedio(){
         return 100*litros/km;
